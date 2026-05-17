@@ -22,7 +22,7 @@ export default function XmlViewer({ xml }: XmlViewerProps) {
   }
 
   return (
-    <section aria-label="Canonical XML">
+    <section aria-label="Canonical XML" className="min-w-0">
       <div className="mb-2 flex items-center justify-between">
         <h2 className="font-mono text-[11px] tracking-data uppercase text-muted">
           Canonical XML
@@ -35,7 +35,7 @@ export default function XmlViewer({ xml }: XmlViewerProps) {
           {copied ? "Copied ✓" : "Copy"}
         </button>
       </div>
-      <pre className="xml-scroll max-h-72 overflow-auto border border-hairline bg-void p-3">
+      <pre className="xml-scroll max-h-72 min-w-0 overflow-auto border border-hairline bg-void p-3">
         <code className="font-mono text-[11px] leading-relaxed text-[#b8b0a8] whitespace-pre">
           {xml}
         </code>

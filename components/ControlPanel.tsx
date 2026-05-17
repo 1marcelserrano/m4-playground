@@ -58,7 +58,7 @@ function ToggleSwitch({
 
 export default function ControlPanel({ options, onChange }: ControlPanelProps) {
   return (
-    <div className="flex flex-col gap-7">
+    <div className="flex min-w-0 flex-col gap-7">
       {/* 1 — Codex */}
       <section>
         <SectionLabel>1 · Codex</SectionLabel>
