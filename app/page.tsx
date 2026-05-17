@@ -22,7 +22,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       <SiteHeader />
 
-      <main className="grid flex-1 grid-cols-1 lg:grid-cols-[2fr_3fr]">
+      <main className="grid min-w-0 flex-1 grid-cols-1 lg:grid-cols-[2fr_3fr]">
         {/* Preview */}
         <section
           className="flex min-h-[320px] min-w-0 items-center justify-center overflow-auto p-8 lg:border-r lg:border-hairline"
