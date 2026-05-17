@@ -25,7 +25,7 @@ export default function Home() {
       <main className="grid flex-1 lg:grid-cols-[2fr_3fr]">
         {/* Preview */}
         <section
-          className="flex min-h-[320px] items-center justify-center overflow-auto p-8 lg:border-r lg:border-hairline"
+          className="flex min-h-[320px] min-w-0 items-center justify-center overflow-auto p-8 lg:border-r lg:border-hairline"
           style={{ background: palette.bg }}
           aria-label="M4 preview"
         >
@@ -33,7 +33,7 @@ export default function Home() {
         </section>
 
         {/* Controls */}
-        <section className="flex flex-col gap-7 p-6 sm:p-8">
+        <section className="flex min-w-0 flex-col gap-7 p-6 sm:p-8">
           <div>
             <h1 className="font-display text-xl font-bold tracking-tightest text-[#f0ece0]">
               M4 Playground
