@@ -18,7 +18,7 @@ export default function CodexCard({ codex, selected, onSelect }: CodexCardProps)
       aria-label={`${codex.label} Codex`}
       title={codex.symbol}
       className={clsx(
-        "flex flex-1 flex-col items-center gap-1.5 border px-2 py-2.5 transition-colors",
+        "flex min-w-0 flex-1 flex-col items-center gap-1.5 border px-1.5 py-2.5 transition-colors",
         selected
           ? "border-[var(--c)] bg-[#0d0a14]"
           : "border-hairline hover:border-muted",
@@ -36,7 +36,7 @@ export default function CodexCard({ codex, selected, onSelect }: CodexCardProps)
       />
       <span
         className={clsx(
-          "font-mono text-[10px] tracking-data uppercase",
+          "max-w-full truncate font-mono text-[10px] tracking-data uppercase",
           selected ? "text-[#f0ece0]" : "text-muted",
         )}
       >
